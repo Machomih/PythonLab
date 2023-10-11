@@ -49,10 +49,11 @@ def fourth_task():
 
 
 def fifth_task():
-    matrix = [['f', 'i', 'r', 's'],
-              ['n', '_', 'l', 't'],
-              ['o', 'b', 'a', '_'],
-              ['h', 't', 'y', 'p']]
+    matrix = [['f', 'i', 'r', 's', '1'],
+              ['n', '_', 'l', 't', '2'],
+              ['o', 'b', 'a', '_', '3'],
+              ['h', 't', 'y', 'p', '4'],
+              ['n', '_', 'l', 't', '5']]
     n = len(matrix)
     m = len(matrix[0])
     result = ''
@@ -65,6 +66,9 @@ def fifth_task():
             result += matrix[n - turn - 1][j]  # n-turn-1
         for i in range(n - turn - 2, turn, -1):  # n-turn-2, turn
             result += matrix[i][turn]  # turn
+    if n / 2 != n // 2:
+        middle = (n - 1) // 2
+        result += matrix[middle][middle]
     print('result is:', result)
 
 
@@ -119,14 +123,13 @@ def tenth_task():
     print('there are', counter + 1, 'words')
 
 
-if __name__ == '__main__':
-    # first_task()
-    # second_task()
-    # third_task()
-    # fourth_task()
-    # fifth_task()
-    # sixth_task()
-    # seventh_task()
-    # eighth_task()
-    # ninth_task()
-    tenth_task()
+# first_task()
+# second_task()
+# third_task()
+# fourth_task()
+fifth_task()
+# sixth_task()
+# seventh_task()
+# eighth_task()
+# ninth_task()
+# tenth_task()
