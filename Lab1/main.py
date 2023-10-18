@@ -86,9 +86,11 @@ def seventh_task():
     string = input()
     numbers = '1234567890'
     final_number = 0
-    for letter in string:
-        if letter in numbers:
-            final_number = final_number * 10 + int(letter)
+    for index in range(0, len(string) - 1):
+        if string[index] in numbers:
+            final_number = final_number * 10 + int(string[index])
+        if string[index+1] == ' ':
+            break
     print("Number extracted is:", final_number)
 
 
@@ -127,9 +129,9 @@ def tenth_task():
 # second_task()
 # third_task()
 # fourth_task()
-fifth_task()
+# fifth_task()
 # sixth_task()
-# seventh_task()
+seventh_task()
 # eighth_task()
 # ninth_task()
 # tenth_task()
