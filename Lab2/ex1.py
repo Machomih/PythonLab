@@ -11,9 +11,9 @@ if terms <= 0:
 elif terms == 1:
     print("Fibonacci sequence upto", terms, ":")
     print(n1)
+    print("Fibonacci sequence:")
 # generate fibonacci sequence
 else:
-    print("Fibonacci sequence:")
     while count < terms:
         print(n1)
         nth = n1 + n2

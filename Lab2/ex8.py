@@ -11,4 +11,4 @@ def ascii_list(x, string_list, flag):
     return main_list
 
 
-print(ascii_list(2, ["test", "hello", "lab002"], False))
+print(ascii_list(2, ["test", "hello", "lab002"], True))

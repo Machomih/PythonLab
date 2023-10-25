@@ -13,4 +13,4 @@ def make_list_based_on_x(*lists, x):
     return new_list
 
 
-print(make_list_based_on_x([1, 2, 3], [2, 3, 4], [4, 5, 6], [4, 1, "test"], x=2))
+print(make_list_based_on_x([1, 2, 3], [2, 3, 4], [4, 5, 6], [4, 5, "test"], x=2))
