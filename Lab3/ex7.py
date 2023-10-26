@@ -13,4 +13,4 @@ def ex7(*sets):
     return dictionary
 
 
-print(ex7({1,2}, {2, 3}))
+print(ex7({1, 2}, {2, 3}))

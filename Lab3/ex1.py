@@ -2,7 +2,7 @@ def ex1(a, b):
     a = set(a)
     b = set(b)
     union = a | b
-    intersection = a + b
+    intersection = a & b
     difference_a_b = a - b
     difference_b_a = b - a
     s = []

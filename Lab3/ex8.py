@@ -1,13 +1,13 @@
-def loop(mapped):
+def loop(mapping):
     visited = []
     object_list = []
-    current = mapped["start"]
+    current = mapping["start"]
     object_list += current
     visited += current
     second_loop = False
 
     while not second_loop:
-        current = mapped[current]
+        current = mapping[current]
         if current in visited:
             second_loop = True
         else:
